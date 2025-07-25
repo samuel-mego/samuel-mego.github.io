@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monitoreo Solar & Baterías</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="imagenes/panel01.jpg" alt="Empresa de Monitoreo Solar y Baterías" />
+    <div class="hero-text">
+      <h1>Monitoreo de Baterías y Paneles Solares</h1>
+      <p class="subtitle">Soluciones en tiempo real para la máxima eficiencia energética</p>
+    </div>
+  </header>
+
+  <main class="charts">
+
+    <!-- FILA 1 -->
+    <section class="chart-section">
+      <h2 class="section-title">KIT SOLAR INSTALADO EN OFICINA</h2>
+
+      <div class="row">
+        <div class="chart-container">
+          <iframe
+            src="https://thingspeak.mathworks.com/channels/3014174/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+            title="Gráfica 1">
+          </iframe>
+        </div>
+        <div class="chart-container">
+          <iframe
+            src="https://thingspeak.mathworks.com/channels/3014174/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=50&type=line"
+            title="Gráfica 2">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Apunta ahora a analysis.html -->
+      <button class="analysis-btn" onclick="location.href='analysis.html'">
+        Mostrar Análisis
+      </button>
+    </section>
+
+    <!-- FILA 2 -->
+    <section class="chart-section">
+      <h2 class="section-title">KIT SOLAR INSTALADO EN CAMPO</h2>
+
+      <div class="row">
+        <div class="chart-container">
+          <iframe src="URL_DE_TU_GRAFICA_3" title="Gráfica 3"></iframe>
+        </div>
+        <div class="chart-container">
+          <iframe src="URL_DE_TU_GRAFICA_4" title="Gráfica 4"></iframe>
+        </div>
+      </div>
+
+      <!-- Puedes crear otro analysis2.html o dejar tu URL_ANALISIS_2 -->
+      <button class="analysis-btn" onclick="location.href='URL_ANALISIS_2'">
+        Mostrar Análisis
+      </button>
+    </section>
+
+    <!-- Puedes añadir más secciones aquí -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

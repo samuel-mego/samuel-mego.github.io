@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Análisis de Batería</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tu hoja de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="analysis-page">
+  <div class="analysis-container">
+    <h1 class="analysis-title">Voltaje Batería – Últimos 50 lecturas</h1>
+
+    <iframe
+      src="https://thingspeak.mathworks.com/apps/matlab_visualizations/630270
+           ?bgcolor=%23ffffff
+           &color=%230078d4
+           &dynamic=true
+           &width=1000
+           &height=600"
+      class="analysis-chart"
+      title="Análisis de Voltaje de Batería">
+    </iframe>
+
+    <button class="back-btn" onclick="history.back()">← Volver</button>
+  </div>
+</body>
+</html>
